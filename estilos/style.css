@@ -73,12 +73,15 @@ main .area {
   padding: 1.5rem;
   border-radius: 10px;
   margin-bottom: 1.2rem;
+  text-align: center;
 }
 
 main section#card {
-  text-align: justify;
-
   grid-column: 2;
+}
+
+section#card p {
+   text-align: justify;
 }
 
 section#card img#perfil {
@@ -94,7 +97,6 @@ section#card img#perfil {
 
 section#card h1 {
   color: var(--destaque);
-  text-align: center;
   margin: 1.5rem 0;
 }
 
@@ -125,14 +127,7 @@ section#details {
   grid-column: 2;
 }
 
-section#details article {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  gap: 1rem;
-}
-
-article h2 {
+article h2, h2 > i {
   color: var(--destaque);
 }
 
@@ -146,6 +141,43 @@ article div#video-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+article div.skill-container {
+  margin: 0.8rem 0;
+  padding: 0.8rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.8rem;
+}
+
+div.skill-item div.info {
+  padding: 0.5rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+  font-weight: 700;
+  background-color: var(--destaque-inverso);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+div.info i {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+div.skill-item div.bar {
+  height: 1.5rem;
+  padding: 5px;
+  border: 5px solid var(--destaque-inverso);
+  border-radius: 0 0 0.4rem 0.4rem;
+}
+
+div.bar div.progress {
+  background-color: var(--destaque);
+  height: 100%;
+  border-radius: 1.5rem;
 }
 
 /* RODAPÉ */
