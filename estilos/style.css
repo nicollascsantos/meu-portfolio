@@ -70,7 +70,7 @@ main {
 
 main .area {
   background-color: var(--fundo-card);
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 10px;
   margin-bottom: 1.2rem;
   text-align: center;
@@ -92,7 +92,7 @@ section#card img#perfil {
   border: 5px solid var(--fundo-card);
   outline: 5px solid var(--destaque);
   display: block;
-  margin: auto;
+  margin: 0.7rem auto;
 }
 
 section#card h1 {
@@ -144,27 +144,27 @@ article div#video-container {
 }
 
 article div.skill-container {
-  margin: 0.8rem 0;
-  padding: 0.8rem;
+  margin: 1.2rem 0;
 
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.8rem;
+  gap: 1.2rem;
 }
 
 div.skill-item div.info {
-  padding: 0.5rem;
+  padding: 0.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   font-weight: 700;
   background-color: var(--destaque-inverso);
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 div.info i {
   font-size: 1.2rem;
-  margin-right: 0.5rem;
+  margin-right: 0.3rem;
 }
 
 div.skill-item div.bar {

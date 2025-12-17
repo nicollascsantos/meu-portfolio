@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-@media screen and (width >= 768px) or (orientation: landscape) {
-    div.skill-container {
+@media screen and (min-width: 768px)  {
+    article div.skill-container {
         grid-template-columns: repeat(2, 1fr);
-        background-color: red;
     }
 }
