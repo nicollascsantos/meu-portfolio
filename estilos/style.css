@@ -6,8 +6,10 @@
   --texto-inverso: #fff;
   --destaque: #0077ff;
   --destaque-inverso: #8ac7f9;
-  --fundo-card: fff;
+  --fundo-card: #fff;
 }
+
+/* CONFIGURAÇÕES GERAIS */
 
 * {
   margin: 0;
@@ -21,6 +23,8 @@ html, body {
   font: normal 1rem Verdana, Tahoma, sans-serif;
   line-height: 1.5rem;
 }
+
+/* CABEÇALHO */
 
 header {
   background-color: var(--destaque);
@@ -52,9 +56,63 @@ nav#menu a:hover {
   color: var(--destaque);
 }
 
-main {
+/* ÁREA PRINCIPAL */
 
+main {
+  margin-top: 1.25rem;
+
+  display: grid;
+  grid-template: repeat(2, 1fr) / 1fr 90% 1fr;
 }
+
+main section#card {
+  background-color: var(--fundo-card);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: justify;
+
+  grid-column: 2;
+}
+
+section#card img#perfil {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid var(--fundo-card);
+  outline: 5px solid var(--destaque);
+  display: block;
+  margin: auto;
+}
+
+section#card h1 {
+  color: var(--destaque);
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+section#card div#social {
+  padding: 1rem 0;
+  font-size: 1.8 rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+div#social a > i {
+  color: var(--destaque);
+
+  transition: all 0.2s linear;
+}
+
+div#social a:hover > i {
+  color: var(--destaque-inverso);
+}
+
+
+/* RODAPÉ */
 
 footer {
 
