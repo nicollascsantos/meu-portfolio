@@ -98,7 +98,7 @@ main .contain {
 
   /* CARD DE APRESENTAÇÃO */
 
-article#about img#perfil {
+img#perfil {
   aspect-ratio: 1 / 1;
   width: 200px;
   border-radius: 50%;
@@ -111,7 +111,7 @@ article#about p {
    text-align: justify;
 }
 
-article#about div#social {
+div#social {
   width: 100%;
   font-size: 1.8em;
   border-top: 2px solid var(--texto);
@@ -142,7 +142,7 @@ main section#details {
 
     /* VÍDEO DE APRESENTAÇÃO */
 
-article#video div#video-container {
+div#video-container {
   background-color: var(--fundo-principal);
   aspect-ratio: 16/9;
   border-radius: 0.5rem;
@@ -172,7 +172,7 @@ div.skill-item i {
   margin-right: 0.2em ;
 }
 
-div.skill-item div.bar {
+div.bar {
   height: 1.5rem;
   padding: 5px;
   border: 5px solid var(--destaque-inverso);
@@ -182,7 +182,7 @@ div.skill-item div.bar {
   grid-column: 1 / -1;
 }
 
-div.bar div.progress {
+div.progress {
   background-color: var(--destaque);
   height: 100%;
   border-radius: 1.5rem;
@@ -190,32 +190,59 @@ div.bar div.progress {
 
     /* ÁREA DE FORMAÇÃO */
 
+div.study {
+  position: relative;
 
+  width: 100%;
+  overflow: hidden;
+  border: 3px solid var(--destaque);
+  border-radius: 0.5em;
+  text-align: end;
+  padding: 0 2em;
+}
 
-div.study-info span {
+div.study span {
   font-size: 0.8em;
   font-weight: 600;
 }
 
-div.study div.study-img {
+.study:hover .overlay {
+  width: 30%;
+  opacity: 1;
+}
+
+div.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0.9;
   background-color: var(--destaque);
-  padding: 0.8em;
-  border-radius: 0.5em;
-  font-size: 1.8em;
-  
+  height: 100%;
+  width: 100%;
+  font-size: 2.2em;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: all 0.5s ease;
 }
 
-div.study-img i {
+div.overlay i {
   color: var(--texto-inverso);
 }
 
-/* RODAPÉ 
+/* RODAPÉ */
 
 footer {
+  background-color: var(--texto);
+  color: var(--texto-inverso);
+  font-size: 0.8em;
+  padding: 0.5em;
+}
 
-} 
-
-*/
+footer a {
+  text-decoration: underline;
+  color: var(--texto-inverso);
+}
