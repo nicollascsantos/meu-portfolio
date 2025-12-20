@@ -84,7 +84,16 @@ main .area {
   display: grid;
   grid-template: repeat(2, auto) / 1fr;
   gap: 1.5em;
-  justify-items: center;
+}
+
+main .contain {
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
 }
 
   /* CARD DE APRESENTAÇÃO */
@@ -95,6 +104,7 @@ article#about img#perfil {
   border-radius: 50%;
   border: 5px solid var(--fundo-card);
   outline: 5px solid var(--destaque);
+  margin: auto;
 }
 
 article#about p {
@@ -105,10 +115,11 @@ article#about div#social {
   width: 100%;
   font-size: 1.8em;
   border-top: 2px solid var(--texto);
-  padding-top: 0.5em;
+  padding-top: 0.8em;
 
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   gap: 2em;
 }
 
@@ -133,49 +144,42 @@ main section#details {
 
 article#video div#video-container {
   background-color: var(--fundo-principal);
-  width: 100%;
   aspect-ratio: 16/9;
   border-radius: 0.5rem;
   font-weight: 600;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 div#video-container i {
   color: var(--texto);
 }
 
-    /* ÁREA DE HABILIDADES 
-
-article#skills div.skill-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.2rem;
-}
-
-div.skill-item div.info {
+    /* ÁREA DE HABILIDADES */
+ 
+div.skill-item {
   padding: 0.6rem;
-  border-radius: 0.4rem 0.4rem 0 0;
-  font-weight: 700;
+  border-radius: 0.4rem;
+  font-weight: 600;
   background-color: var(--destaque-inverso);
+  width: 100%;
 
-  display: flex;
+  display: grid;
+  grid-template: 1fr 1fr / auto auto;
   justify-content: space-between;
-  align-items: center;
 }
 
-div.info i {
-  font-size: 1.2rem;
-  margin-right: 0.3rem;
+div.skill-item i {
+  font-size: 1.3rem;
+  margin-right: 0.2em ;
 }
 
 div.skill-item div.bar {
   height: 1.5rem;
   padding: 5px;
   border: 5px solid var(--destaque-inverso);
-  border-radius: 0 0 0.4rem 0.4rem;
+  border-radius: 0.4rem;
+  background-color: var(--fundo-card);
+
+  grid-column: 1 / -1;
 }
 
 div.bar div.progress {
@@ -184,12 +188,29 @@ div.bar div.progress {
   border-radius: 1.5rem;
 }
 
-    /* ÁREA DE FORMAÇÃO 
+    /* ÁREA DE FORMAÇÃO */
 
-article#training {
 
+
+div.study-info span {
+  font-size: 0.8em;
+  font-weight: 600;
 }
 
+div.study div.study-img {
+  background-color: var(--destaque);
+  padding: 0.8em;
+  border-radius: 0.5em;
+  font-size: 1.8em;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.study-img i {
+  color: var(--texto-inverso);
+}
 
 /* RODAPÉ 
 
