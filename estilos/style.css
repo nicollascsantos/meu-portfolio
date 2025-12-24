@@ -72,6 +72,10 @@ h1, h2, h3, main i {
   color: var(--destaque);
 }
 
+main .desc {
+   text-align: justify;
+}
+
 main .central {
   grid-column: 2;
 }
@@ -99,16 +103,12 @@ main .contain {
   /* CARD DE APRESENTAÇÃO */
 
 img#perfil {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
   width: 200px;
   border-radius: 50%;
   border: 5px solid var(--fundo-card);
   outline: 5px solid var(--destaque);
   margin: auto;
-}
-
-article#about p {
-   text-align: justify;
 }
 
 div#social {
@@ -201,12 +201,12 @@ div.study {
   padding: 0 2em;
 }
 
-div.study span {
+div.study > span {
   font-size: 0.8em;
   font-weight: 600;
 }
 
-.study:hover .overlay {
+div.study:hover div.overlay {
   width: 30%;
   opacity: 1;
 }
@@ -232,6 +232,9 @@ div.overlay {
 div.overlay i {
   color: var(--texto-inverso);
 }
+
+/* ÁREA DE PROJETOS*/
+
 
 /* RODAPÉ */
 

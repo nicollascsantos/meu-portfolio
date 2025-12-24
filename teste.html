@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            display: grid;
+            grid-template: auto/50px 100px 50px;
+        }
+
+        #project-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .project {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <article id="projects" class="area">
+                <h2><i class="fa-solid fa-code"></i> Meus Projetos</h2>
+
+                <div id="project-container" class="contain">
+                    <div class="project">
+                        <img src="./imagens/projeto-01-videos.jpg" alt="">
+
+                        <div class="proj-info">
+                            <h3>Título do Projeto</h3>
+                            
+                            <details>
+                                <summary>Mais Informações</summary>
+                                <p class="desc">Descrição da página...</p>
+                            </details>
+                        </div> 
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
