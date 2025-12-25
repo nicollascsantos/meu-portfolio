@@ -5,7 +5,7 @@
   --texto: #222;
   --texto-inverso: #fff;
   --destaque: #0077ff;
-  --destaque-inverso: #8ac7f9;
+  --destaque-inverso: #66bbff;
   --fundo-card: #fff;
 }
 
@@ -19,7 +19,148 @@
 
 html, body {
   background-color: var(--fundo-principal);
-  font: normal 1rem Verdana, Tahoma, sans-serif;
+  font: normal 1rem Verdana, "Geneva", Tahoma, sans-serif;
   line-height: 1.5rem;
+  color: var(--texto);
 }
 
+header {
+  background-color: var(--destaque);
+  padding: 1rem;
+}
+
+#menu ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+#menu a {
+  text-decoration: none;
+  color: var(--texto-inverso);
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 0.7rem 1rem ;
+  border-radius: 0.4rem;
+  transition: all 0.3s linear;
+}
+
+#menu a:hover {
+  background-color: var(--fundo-principal);
+  color: var(--destaque);
+}
+
+main {
+  margin: 1.3rem 0;
+
+  display: grid;
+  grid-template-columns: 1fr 90vw 1fr;
+  gap: 1.3rem;
+}
+
+section {
+  border-radius: 0.5rem;
+
+  grid-column: 2;
+
+  /*Adição própria*/
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+#ficha {
+  background-color: var(--fundo-card);
+  padding: 1.5rem;
+}
+
+#ficha img {
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 0.3rem solid var(--fundo-card);
+  outline: 0.3rem solid var(--destaque);
+}
+
+#ficha h1 {
+  color: var(--destaque);
+  font-size: 1.7rem;
+}
+
+#ficha p {
+  text-align: justify;
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+#social a {
+  text-decoration: none;
+  color: var(--destaque);
+  font-size: 1.8rem;
+  padding: 0.7rem 1rem ;
+  border-radius: 0.4rem;
+  transition: all 0.2s linear;
+}
+
+#social a:hover {
+  background-color: var(--destaque-inverso);
+  color: var(--fundo-card);
+}
+
+article {
+  background-color: var(--fundo-card);
+  padding: 1.3rem;
+  width: 100%;
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.7rem;
+}
+
+article h2 {
+  color: var(--destaque);
+  
+}
+
+#video-conteiner {
+  aspect-ratio: 16/9;
+  background-color: var(--fundo-principal);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: var(--texto);
+  color: var(--texto-inverso);
+  padding: 0.7rem;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: underline;
+  color: var(--texto-inverso);
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: var(--destaque-inverso);
+}
