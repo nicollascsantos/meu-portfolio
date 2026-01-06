@@ -122,12 +122,12 @@ article {
 
   display: flex;
   flex-flow: column nowrap;
-  gap: 0.7rem;
+  gap: 1.5rem;
 }
 
 article h2 {
   color: var(--destaque);
-}
+} 
 
 #video-conteiner {
   aspect-ratio: 16/9;
@@ -139,6 +139,32 @@ article h2 {
   font-size: 1.2rem;
 }
 
+#skill-conteiner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+#skill-conteiner .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+#skill-conteiner .barra {
+  width: 100%;
+  height: 0.5rem;
+  background-color: var(--fundo-principal);
+  border-radius: 0.4rem;
+}
+
+#skill-conteiner .progresso {
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 0.4rem;
+}
 
 
 
