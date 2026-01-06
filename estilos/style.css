@@ -65,7 +65,6 @@ section {
 
   grid-column: 2;
 
-  /*Adição própria*/
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -77,7 +76,7 @@ section {
   padding: 1.5rem;
 }
 
-#ficha img {
+#ficha .foto {
   width: 200px;
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -181,12 +180,18 @@ article h2 {
   padding: 0.8rem;
   border-left: 1rem solid var(--destaque-inverso);
   border-radius: 0.8rem;
+  color: var(--texto);
   cursor: default;
   transition: all 0.2s linear;
 }
 
 .curso:hover {
   border-left: 2rem solid var(--destaque)
+}
+
+.curso .periodo {
+  font-style: italic;
+  font-size: 0.8rem;
 }
 
 .curso .titulo {
@@ -197,17 +202,56 @@ article h2 {
   font-weight: 600;
 }
 
+#projeto-conteiner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
 
+.projeto {
+  background-color: var(--fundo-principal);
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projeto .projeto-imagem {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 0.5rem;
+  max-height: 300px;
+}
+
+.projeto .projeto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projeto-info details {
+  background-color: var(--fundo-card);
+  padding: 0.8rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+details i {
+  font-size: 1.3rem;
+  color: var(--destaque-inverso);
+}
 
 footer {
   background-color: var(--texto);
   color: var(--texto-inverso);
-  padding: 0.7rem;
+  padding: 0.4rem;
   text-align: center;
 }
 
 footer a {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--texto-inverso);
   font-weight: 600;
 }

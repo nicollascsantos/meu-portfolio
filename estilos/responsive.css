@@ -4,4 +4,9 @@
     #skill-conteiner {
         grid-template-columns: 1fr 1fr;
     }
+
+    .projeto {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 }
