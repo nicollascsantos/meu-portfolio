@@ -145,7 +145,7 @@ article h2 {
   gap: 2rem;
 }
 
-#skill-conteiner .info {
+.item .info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,23 +153,49 @@ article h2 {
   font-size: 1.1rem;
 }
 
-#skill-conteiner .barra {
+.info .percent {
+  color: var(--destaque-inverso);
+}
+
+.item .barra {
   width: 100%;
   height: 0.5rem;
   background-color: var(--fundo-principal);
   border-radius: 0.4rem;
 }
 
-#skill-conteiner .progresso {
+.barra .progresso {
   height: 100%;
   background-color: var(--destaque-inverso);
   border-radius: 0.4rem;
 }
 
+#formacao-conteiner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
 
+.curso {
+  background-color: var(--fundo-principal);
+  padding: 0.8rem;
+  border-left: 1rem solid var(--destaque-inverso);
+  border-radius: 0.8rem;
+  cursor: default;
+  transition: all 0.2s linear;
+}
 
+.curso:hover {
+  border-left: 2rem solid var(--destaque)
+}
 
+.curso .titulo {
+  color: var(--destaque);
+}
 
+.curso .instituicao {
+  font-weight: 600;
+}
 
 
 
