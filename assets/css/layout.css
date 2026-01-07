@@ -24,6 +24,15 @@ html, body {
   color: var(--texto);
 }
 
+body.escuro {
+  --fundo-principal: #222;
+  --texto: #e0e0e0e0;
+  --texto-inverso: #333;
+  --destaque: #0FC2C0;
+  --destaque-inverso:#008F8C;
+  --fundo-card: #444;
+}
+
 header {
   background-color: var(--destaque);
   padding: 1rem;
@@ -144,7 +153,7 @@ article h2 {
 #skill-conteiner {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .item .info {
@@ -248,7 +257,7 @@ details i {
 }
 
 footer {
-  background-color: var(--texto);
+  background-color: var(--destaque);
   color: var(--texto-inverso);
   padding: 0.4rem;
   text-align: center;

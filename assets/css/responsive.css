@@ -2,7 +2,24 @@
 
 @media (width >= 768px) {
     #skill-conteiner {
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width >= 920px) {
+    main {
+        grid-template-columns: auto 1fr 2fr auto;
+    }
+
+    section#ficha {
+        grid-column: 2;
+        height: fit-content;
+        position: sticky;
+        top: 5rem;
+    }
+
+    section#detalhes {
+        grid-column: 3;
     }
 
     .projeto {
